@@ -1,7 +1,8 @@
 html, body, #wrapper {
   background-color: #fcfcfc;
   font-family: 'Neue Haas Unica W1G';
-  height:100%;
+  color: #b3b4b3;
+  height: 100%;
   width: 100%;
   margin: 0;
   padding: 0;
@@ -9,14 +10,32 @@ html, body, #wrapper {
 }
 
 html ::selection {
-  background-color: #000000;
+  background-color: #b3b4b3;
+  color: #fcfcfc;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 #wrapper td {
-  vertical-align: middle;
   text-align: center;
 }
 
+
+.top td {
+    padding-bottom: 0;
+    vertical-align: bottom;
+}
+
+.bot td {
+    padding-top: 0;
+    vertical-align: top;
+}
+
 .image {
-  height: 75vh;
+  max-height: 75vh;
+  max-width: 75vw;
+  object-fit: cover;
 }
